@@ -1,0 +1,15 @@
+{
+  "team": "YOUR_TEAM_NAME",
+  "members": [
+    {
+      "name": "YOUR_NAME",
+      "email": "YOUR_EMAIL"
+    }
+  ],
+  "repo": "https://github.com/YOUR_ORG/YOUR_REPO",
+  "commit": "GIT_COMMIT_SHA",
+  "run_command": "python3 builder/build.py {case_folder} {mock_url}",
+  "workflow": "submission/final.workflow.json",
+  "trace": "submission/final.trace.jsonl",
+  "mock_url": "https://YOUR_WORKER.workers.dev"
+}

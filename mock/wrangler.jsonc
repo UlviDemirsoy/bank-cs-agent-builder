@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "freya-final-bank-mock",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-11",
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MOCK_STATE",
+        "class_name": "MockState"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["MockState"]
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1
+    }
+  }
+}

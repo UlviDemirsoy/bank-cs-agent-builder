@@ -1,0 +1,38 @@
+env.sh
+**/.env
+**/.freya-agents.json
+build-the-builder-v3.zip
+
+# Credentials and local configuration
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node / Cloudflare
+node_modules/
+.wrangler/
+
+# Local experiments and generated practice artifacts
+.scratch/
+out/
+results/
+synthetic/
+traces/
+final-case*/
+kit/build-the-builder/out/
+kit/build-the-builder/.personas.json
+kit/build-the-builder/scratch*/
+builder/baselines/
+builder/skill/
+submission/*.workflow.json
+submission/*.trace.jsonl
+!submission/final.workflow.json
+!submission/final.trace.jsonl
+notlar.md
